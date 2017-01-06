@@ -19,7 +19,53 @@ local use of git on laptop
     
     git add *.html => stages justs html files to the commit
     
+    git commit -a -m 'comment for commit' => the -a adds all files being tracked to the stage for the commit.
+    
     touch .getignore => creates an ignore file, open and add file types to ignore (e.g. log files add *.log to .gitignore)
+    
+Branching and merging
+
+    git branch MyBranch => creates a new branch called MyBranch
+    
+    git checkout MyBranch => switches to the MyBranch branch
+    
+    git checkout master => switch back to the main branch (always called master)
+    
+    Merging:  Always want to be on the destination branch (master)
+    git merge MyBranch => merges MyBranch into the master branch
+    
+    git mergetool
+    
+    Example:   working on a branch, but not ready to commit.
+    if you switch to another branch the changes will follow.
+    Use command => git stash    to temporarily capture the changes, then free to move to another branch without impact
+    Use command => git stash apply  to apply the stashed changes back to the branch you are working on.
+    
+Remote repositories    
+    
+    remember - everything is still happening locally.  have to manually fetch and push from remote repository
+    
+    git remote => lists current remote repositories
+    
+    use clone link from github
+    
+    git clone <link>  => creates a clone of all of the repository on the local machine
+    
+    git remote -v => shows the origin links that are associated with the repository
+    
+    git fetch origin => gets all of the updates from the links and dowloads them to the local machine, but does not merge
+    
+    git pull origin => gets all of the updates and merges them into the local repository
+    
+    git push origin master => sends all of the changes to the remote repository and puts them on the master branch
+    
+    git remote add MyRepo <link> => adds another remote repository
+    
+free pro Git e-book: http://git-scm.com/book/
+
+
+
+
     
     
     
