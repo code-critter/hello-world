@@ -1,0 +1,25 @@
+can get the latest version of Git => http://git.scm.com
+
+local use of git on laptop
+
+    git init => creates a new git repository
+    
+    git status => 
+    
+    git add readme.txt => adds readme.txt to commit stage
+    
+    git commit => commits changes that are on the stage
+                  add commit comment
+    
+    git commit -m 'commit comment'
+    
+    git log => shows commits and comments
+    
+    git add . => tells git to stage everything for the commit
+    
+    git add *.html => stages justs html files to the commit
+    
+    touch .getignore => creates an ignore file, open and add file types to ignore (e.g. log files add *.log to .gitignore)
+    
+    
+    
